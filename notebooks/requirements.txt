@@ -1,5 +1,5 @@
 # Feature store and model registry
-hopsworks==4.1.3 # i have tried 4.1.4, only hopswork, 4.1.0
+hopsworks==4.0 # i have tried 4.1.4, only hopswork, 4.1.0
 # hsfs==3.7.9
 
 # Resolve city names from (longitude, latitude) coordinates
