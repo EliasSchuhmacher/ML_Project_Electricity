@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly Price Predictions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .plot {
+            background: #fff;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 30%;
+        }
+        .plot img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .plot h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hourly Price Predictions</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="plot">
+                <h2>SE3 - Day 1</h2>
+                <img src="plots/hourly_price_predictions_se3_0.png" alt="SE3 Hourly Price Predictions Day 1">
+            </div>
+            <div class="plot">
+                <h2>SE3 - Day 2</h2>
+                <img src="plots/hourly_price_predictions_se3_1.png" alt="SE3 Hourly Price Predictions Day 2">
+            </div>
+            <div class="plot">
+                <h2>SE3 - Day 3</h2>
+                <img src="plots/hourly_price_predictions_se3_2.png" alt="SE3 Hourly Price Predictions Day 3">
+            </div>
+        </div>
+        <div class="content">
+            <div class="plot">
+                <h2>SE4 - Day 1</h2>
+                <img src="plots/hourly_price_predictions_se4_0.png" alt="SE4 Hourly Price Predictions Day 1">
+            </div>
+            <div class="plot">
+                <h2>SE4 - Day 2</h2>
+                <img src="plots/hourly_price_predictions_se4_1.png" alt="SE4 Hourly Price Predictions Day 2">
+            </div>
+            <div class="plot">
+                <h2>SE4 - Day 3</h2>
+                <img src="plots/hourly_price_predictions_se4_2.png" alt="SE4 Hourly Price Predictions Day 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
