@@ -52,12 +52,17 @@
             font-size: 18px;
         }
         .explanation {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin: 20px 0;
         }
         .explanation img {
-            width: 80%;
+            width: 30%;
+            margin-right: 20px;
             border-radius: 5px;
+        }
+        .explanation p {
+            flex: 1;
         }
     </style>
 </head>
@@ -67,7 +72,6 @@
     </header>
     <div class="container">
         <div class="explanation">
-            <h2>Sweden Price Areas</h2>
             <img src="Sweden_price_areas.png" alt="Sweden Price Areas">
             <p>Sweden is divided into different price areas for electricity: SE1, SE2, SE3, and SE4. This project focuses on predicting hourly electricity prices for SE3 (Stockholm) and SE4 (Malmö). The predictions are based on historical data, time of day, weekday, month and weather information, providing insights into future electricity prices for these regions.</p>
         </div>
