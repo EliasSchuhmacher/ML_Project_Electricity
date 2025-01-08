@@ -1,5 +1,5 @@
 # Feature store and model registry
-hopsworks==4.2.0
+hopsworks==4.1.4
 # hsfs==3.7.9
 
 # Resolve city names from (longitude, latitude) coordinates
