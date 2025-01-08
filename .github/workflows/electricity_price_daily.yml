@@ -1,9 +1,9 @@
 name: electricity_price_daily
 
 on:
-  workflow_dispatch:
-  # schedule:
-  # - cron: '11 7 * * *'
+  # workflow_dispatch:
+  schedule:
+  - cron: '30 12 * * *'
 
 jobs:
   schedule_pipelines:
