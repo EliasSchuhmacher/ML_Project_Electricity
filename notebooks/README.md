@@ -1,6 +1,6 @@
 # Electricity Price Forecasting
 
-This project builds an Electricity Price Forecasting Service to predict hourly electricity prices for different regions. The service uses machine learning models to provide accurate and timely predictions, helping users make informed decisions based on future electricity prices.
+This project builds an Electricity Price Forecasting Service to predict hourly electricity prices for the regions SE3 (Stockholm area) and SE4 (Malmö). The service uses an XGBoostregressor to provide predictions for the hourly electricity spot price up to 5 days in advance.
 
 ## Project Overview
 
@@ -16,9 +16,10 @@ The goal of this project is to forecast hourly electricity prices for different 
 ## Data Sources
 
 The project uses the following data sources:
-- **Historical Electricity Prices**: Historical data of electricity prices for different regions.
+- **Historical Electricity Prices**: Historical data of electricity prices for the regions SE3 and SE4. Retrieved from https://www.energidataservice.dk/tso-electricity/elspotprices 
 - **Time factors**: Time of day, weekday, month
-- **Weather Data**: Weather information such as temperature, precipitation, cloud cover, wind speed, and sunshine duration.
+- **Weather Data**: Temperature, precipitation, cloud cover, wind speed, and sunshine duration. Retrieved from open-meteo.com
+- **Current Electricity Prices**: New electricity prices are retrived on a daily basis from https://www.elprisetjustnu.se/elpris-api
 
 ## Model
 
