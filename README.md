@@ -2,6 +2,9 @@
 
 This project builds an Electricity Price Forecasting Service to predict hourly electricity prices for the regions SE3 (Stockholm area) and SE4 (Malmö). The service uses an XGBoostregressor to provide predictions for the hourly electricity spot price up to 5 days in advance.
 
+
+- **Daily Predictions:** https://eliasschuhmacher.github.io/ML_Project_Electricity/
+
 ## Project Overview
 
 The goal of this project is to forecast hourly electricity prices for different regions (SE3 and SE4) using historical data and weather information. The predictions are visualized and made available through a web interface hosted on GitHub Pages.
