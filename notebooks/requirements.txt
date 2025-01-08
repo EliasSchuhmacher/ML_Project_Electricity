@@ -1,7 +1,7 @@
 # Feature store and model registry
 hopsworks # i have tried 4.1.4, only hopswork, 4.1.0, 4.0.0 (doesn't exist)
 
-kafka-python
+confluent-kafka
 
 # Resolve city names from (longitude, latitude) coordinates
 geopy==2.4.1
