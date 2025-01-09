@@ -12,6 +12,7 @@ import openmeteo_requests
 import requests_cache
 from retry_requests import retry
 from pathlib import Path
+import pytz
 
 
 def make_get_request(url:str):
@@ -25,20 +26,27 @@ def make_get_request(url:str):
     return data
 
 def get_tomorrows_electricity_prices(price_area: str):
+    # Set the timezone to Swedish time
+    swedish_tz = pytz.timezone('Europe/Stockholm')
+    now = datetime.now(swedish_tz)
 
-    # if its after 12:15, get the prices for tomorrow, otherwise get the prices for today
-    if datetime.now().hour >= 12 and datetime.now().minute >= 15:
+    # if it's after 12:15, get the prices for tomorrow, otherwise get the prices for today
+    # if now.hour >= 12 and now.minute >= 15:
         # Get tomorrow's date
-        tomorrow = datetime.now() + timedelta(days=1)
-        year = tomorrow.strftime('%Y')
-        month = tomorrow.strftime('%m')
-        day = tomorrow.strftime('%d')
-    else:
-        # Get today's date
-        today = datetime.now()
-        year = today.strftime('%Y')
-        month = today.strftime('%m')
-        day = today.strftime('%d')
+    tomorrow = now + timedelta(days=1)
+    year = tomorrow.strftime('%Y')
+    month = tomorrow.strftime('%m')
+    day = tomorrow.strftime('%d')
+    # else:
+    #     # Get today's date
+    #     today = now
+    #     year = today.strftime('%Y')
+    #     month = today.strftime('%m')
+    #     day = today.strftime('%d')
+
+    print("Fetching electricity prices...")
+    print(f"Date: {year}-{month}-{day}")
+    print(f"Price area: {price_area}")
 
     # Format the URL
     url = f"https://www.elprisetjustnu.se/api/v1/prices/{year}/{month}-{day}_{price_area}.json"
